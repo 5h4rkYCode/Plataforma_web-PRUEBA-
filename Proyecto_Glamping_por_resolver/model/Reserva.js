@@ -320,15 +320,28 @@ class Reserva {
         const clienteId = typeof cliente === 'object' ? cliente.getId() : cliente;
         
         // Recorrer el array de reservas para encontrar las del cliente
-        /**
-         * 
-         * Aqui va la implementacion del recorido del array de reservas por cliente usando un ciclo
-         * 
-         * 
-         * 
-         */
         
-        return reservasCliente;
+         
+         // Aqui va la implementacion del recorido del array de reservas por cliente usando un ciclo
+         for (let i = 0; i < reservas.length; i++) {
+            if (reservas[i].getCliente().getId() === clienteId) {
+               reservasCliente.push(reservas[i]);
+               }
+   
+   
+   
+            if (reservasCliente.length === 0) {
+               return null; // Si no se encuentra, retornar null
+   
+            }
+   
+   
+          }
+         
+         
+        
+        
+         return reservasCliente;
     }
 
     /**
