@@ -357,13 +357,17 @@ class Reserva {
         const glampingId = typeof glamping === 'object' ? glamping.getId() : glamping;
         
         // Recorrer el array de reservas para encontrar las del glamping
-        /**
-         * 
-         * 
-         * Aqui va la implementacion del recorido del array de reservas por glamping usando un ciclo
-         * 
-         * 
-         */
+        
+         
+         
+         // Aqui va la implementacion del recorido del array de reservas por glamping usando un ciclo
+          for (let i = 0; i < reservas.length; i++){
+            if (reservas[i].getGlampingId() === glampingId){
+                reservasGlamping.push(reservas[i]);
+            }
+          }
+         
+         
         
         return reservasGlamping;
     }
