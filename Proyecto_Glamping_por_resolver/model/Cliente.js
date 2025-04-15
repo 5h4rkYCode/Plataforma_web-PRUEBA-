@@ -193,19 +193,15 @@ class Cliente {
         const clientes = Cliente.obtenerClientes();
         
         // Recorrer el array de clientes para encontrar el que coincida con el ID
-        
-        for ( let i =0; i < clientes.length; i++){
+           
+         
+         
+         // Aqui va la implementacion de la busqueda del cliente por ID usando un ciclo
+         for ( let i =0; i < clientes.length; i++){
             if (clientes[i].getId === id){
                 return clientes[i];
             }
         }
-         
-         
-         // Aqui va la implementacion de la busqueda del cliente por ID usando un ciclo
-            
-
-
-
           // Si no se encuentra, retornar null
          return null;
     }
