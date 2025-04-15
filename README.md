@@ -10,4 +10,4 @@ Este proyecto implementa un sistema completo para la gestión de un negocio de g
 - Glampings (alojamientos)
 - Reservas
 
-Esta plataforma web fue realizada por otra persona, los autores este repo solo realizamos gestión al software y corrección de errores colocados de forma aproposita por [Mauricio Rivera](https://github.com/MauricioRivera).
+Esta plataforma web fue realizada por otra persona, los autores este repo solo realizamos gestión al software y corrección de errores colocados de forma aproposita por [Mauricio Rivero](https://github.com/mauriciorivero).
