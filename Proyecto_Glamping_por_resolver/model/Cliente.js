@@ -198,7 +198,7 @@ class Cliente {
          
          // Aqui va la implementacion de la busqueda del cliente por ID usando un ciclo
          for ( let i =0; i < clientes.length; i++){
-            if (clientes[i].getId === id){
+            if (clientes[i].getId() === id){
                 return clientes[i];
             }
         }
