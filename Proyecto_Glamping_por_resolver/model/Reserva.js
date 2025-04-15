@@ -290,16 +290,21 @@ class Reserva {
         const reservas = Reserva.obtenerReservas();
         
         // Recorrer el array de reservas para encontrar la que coincida con el ID
-        /**
-         * 
-         * Aqui va la implementacion del recorido del array de reservas por id usando un ciclo
-         * 
-         * 
-         * 
-         */
         
+        
+         //Aqui va la implementacion del recorido del array de reservas por id usando un ciclo
+         for (const reserva of reservas) {
+            if (reserva.getId() === id) {
+               return reserva; // Retornar la reserva si se encuentra
+           }
+         
+         
+         
+         }
         // Si no se encuentra, retornar null
         return null;
+    
+
     }
 
     /**
