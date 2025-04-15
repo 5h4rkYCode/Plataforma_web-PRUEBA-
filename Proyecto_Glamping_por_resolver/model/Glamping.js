@@ -213,14 +213,17 @@ class Glamping {
         const glampings = Glamping.obtenerGlampings();
         
         // Recorrer el array de glampings para encontrar el que coincida con el ID
-        /**
-         * 
-         * 
-         * Aqui va la implementacion del recorido del array de glampings por id usando un ciclo
-         * 
-         * 
-         * 
-         */
+        
+         
+         
+         // Aqui va la implementacion del recorido del array de glampings por id usando un ciclo
+         for (let i = 0; i < glampings.length; i++) {
+            if (glampings[i].getId() === id){
+                return glampings[i];
+            }
+        
+         
+         
         
         // Si no se encuentra, retornar null
         return null;
